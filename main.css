@@ -144,7 +144,6 @@ margin: 0;
 .head-left > a div {
 	width: 50px;
 	display: block;
-	/*margin: 0 9px;*/
 }
 .head-left > a img {
 	margin: 0 auto;
@@ -169,7 +168,9 @@ margin: 0;
 	color: white;
 	text-align: center;
 }
-
+.horizontal-menu-trigger {
+	display: none;
+}
 
 
 /****	 LEFT SIDEBAR    ****/
@@ -211,14 +212,6 @@ nav > a:hover {
 nav a:last-child div {
 	border: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -275,13 +268,45 @@ nav a:last-child div {
 	color: #FCFE6A;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.sidebar-left {
 		margin-left: 0;
 	}
 }
-@media only screen and (orientation: portrait) {
-	.container {
-		background-color: red;
+
+@media (max-width: 450px) {
+	.head-left > a div {
+		width: auto;
 	}
+
+/****************/
+/*	TOP MENU	*/
+/****************/
+	.head-left > a img {
+	    width: 50px;
+	    height: 50px;
+	}
+	.head-left {
+	    position: absolute;
+	    top: 55px;
+	    left: 0px;
+	    width: 100%;
+	    background-color: purple;
+	    border: 1px solid purple;
+	    border-radius: 0 0 15px 15px;
+	}
+	.horizontal-menu-trigger {
+		background-color: #d8ff06;
+		display: table-row;
+		width: 100%;
+		height: 30px;
+	}
+	.head-left > a {
+	    padding: 10% 0;
+	}
+	.head-left a:hover img {
+	    width: 40px;
+	    height: 40px;
+	}
+/*	TOP MENU END	*/
 }
