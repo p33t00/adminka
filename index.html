@@ -5,11 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./main.css">
 	<title>Admin Panel</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="container">
 	<header class="top-head col-12">
-			<div class="head-left">
+			<div id="settings">
+				<div>
+					<img src="img/settings-sendwich.png" width="30" height="30">
+				</div>
+			</div>
+<!-- 			<div class="head-left">
 			<div>
 				<a href="#">
 					<div>
@@ -31,7 +37,7 @@
 				</a>
 			</div>
 			<div id="horizontal-menu-trigger"></div>
-			</div>
+			</div> -->
 			<div class="head-right">
 				<div id="user">
 					<a href="#">
@@ -45,24 +51,27 @@
 					</a>
 				</div>
 			</div>
-			<div class="mid-head"><h3>Meet Ups</h3></div>
+			<div class="mid-head"><h3>Meet-Ups</h3></div>
 		</header>
  	<div class="sidebar-left col-2">
-		<nav>
-			<a href="#"><div class="hov">Main sector</div></a>
-			<a href="#"><div class="hov">Something new</div></a>
-			<a href="#"><div class="hov">Warap here</div></a>
-			<a href="#"><div class="hov">Say heloo</div></a>
-			<a href="#"><div class="hov">About us</div></a>
-		</nav>
-		<div class="color-link">
-			<ul>
-				<li><a href="#" class="blue">another one menu youyou</a></li>
-				<li><a href="#" class="grey">and another one menu</a></li>
-				<li><a href="#" class="red">and another one menu</a></li>
-				<li><a href="#" class="yellow">and another one menu</a></li>
-			</ul>
+	 	<div>
+			<nav>
+				<a href="#"><div class="hov">Main sector</div></a>
+				<a href="#"><div class="hov">Something new</div></a>
+				<a href="#"><div class="hov">Warap here</div></a>
+				<a href="#"><div class="hov">Say heloo</div></a>
+				<a href="#"><div class="hov">About us</div></a>
+			</nav>
+			<!-- <div class="color-link">
+				<ul>
+					<li><a href="#" class="blue">another one menu youyou</a></li>
+					<li><a href="#" class="grey">and another one menu</a></li>
+					<li><a href="#" class="red">and another one menu</a></li>
+					<li><a href="#" class="yellow">and another one menu</a></li>
+				</ul>
+			</div> -->
 		</div>
+		<div id="vertical-side-menu-trigger"></div>
 	</div>
 	<div class="content"><h1>content goes here</h1>
 
@@ -72,3 +81,7 @@
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+	$(#settings).css("display", "none");
+</script>
